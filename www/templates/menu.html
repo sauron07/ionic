@@ -1,0 +1,20 @@
+<ion-side-menus>
+  <ion-side-menu-content scroll="true">
+    <div class="bar bar-header bar-energized">
+      <button class="button icon ion-navicon" ng-click="toggleLeft()"></button>
+      <h1 class="title">Title</h1>
+    </div>
+    <ion-nav-view animation="slide-left-right"></ion-nav-view>
+    <div ui-view></div>
+  </ion-side-menu-content>
+  <!-- Left menu -->
+  <ion-side-menu side="left">  
+    <ion-content>
+      <ion-list>
+        <ion-item collection-repeat="item in items" menu-close nav-clear href="{{item.url}}">
+          {{item.title}}
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>

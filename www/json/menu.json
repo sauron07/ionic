@@ -1,0 +1,12 @@
+[
+    { 
+        "title": "Home",
+        "icon": "icon-home",
+        "url": "#/app/home"
+    },
+    { 
+        "title": "About",
+        "icon": "icon-home",
+        "url": "#/app/about"
+    }
+]
